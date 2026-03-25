@@ -35,7 +35,7 @@
 <% if @project.todos.any? %>
   <div class="bg-white shadow overflow-hidden sm:rounded-md">
     <ul class="divide-y divide-gray-200">
-      <% @project.todos.each do |todo| %>
+      <% @project.todos.by_priority.each do |todo| %>
         <li>
           <div class="px-4 py-4 sm:px-6 hover:bg-gray-50">
             <div class="flex items-center justify-between">

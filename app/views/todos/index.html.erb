@@ -63,7 +63,7 @@
 </div>
 
 <div id="todos" class="space-y-6">
-  <% @todos.each do |todo| %>
+  <% @todos.by_priority.each do |todo| %>
     <div class="bg-white overflow-hidden shadow rounded-lg transition-all hover:shadow-md">
       <%= render todo %>
       <div class="px-4 py-3 bg-gray-50 text-right sm:px-6 flex justify-end space-x-3">
