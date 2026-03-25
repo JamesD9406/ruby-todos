@@ -1,24 +1,23 @@
-# README
+# Ruby Todos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A Ruby on Rails todo application built while learning the basics of Ruby on Rails.
 
-Things you may want to cover:
+## About
 
-* Ruby version
+This project is a work-in-progress learning exercise, built by following the **Beginner's Guide to Ruby on Rails** series by [TypeCraft](https://www.youtube.com/@typecraft_dev) on YouTube.
 
-* System dependencies
+## Learning Resource
 
-* Configuration
+**Rails New with Typecraft** — a 7-part playlist covering the fundamentals of Ruby on Rails.
 
-* Database creation
+[Watch the full playlist on YouTube](https://www.youtube.com/watch?v=oEDkhfsFMTg&list=PLHFP2OPUpCeZcPutT9yn4-e0bMmrn5Gd1)
 
-* Database initialization
+All credit for the curriculum and guidance goes to TypeCraft. This project exists purely for learning purposes.
 
-* How to run the test suite
+## Features Covered
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Projects (index, show, new, edit, delete)
+- Todos associated with projects
+- Model validations
+- Tailwind CSS styling
+- Rails routing
