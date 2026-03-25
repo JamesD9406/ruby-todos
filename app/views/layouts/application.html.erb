@@ -24,6 +24,10 @@
   </head>
 
   <body>
+    <%# Show messages to the user %>
+    <% if flash[:notice] %>
+      <p class="flash"><%= flash[:notice] %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

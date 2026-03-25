@@ -13,7 +13,18 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   resources :todos
+  resources :projects
 
-  get "/projects", to: "projects#index"
-  get "projects/:id", to: "projects#show", as: "project"
+  # # Could have used resources :projects like I did with Todos, but wanted to see what the specific routes were and how they work
+  # # Ended up replacing this, but it di show me how easy it is to make a mistake in your routes
+  # get "/projects", to: "projects#index"
+  # # Note: route order matters here, routes with additional parts (i.e. projects/new) must come before routes without the additional part (i.e. projects/:id)
+  # # This is becuase if we did the reverse order, projects/new would match to projects/:id, and "new" would not map to a dynamic id, so it would error
+  # get "/projects/new", to: "projects#new", as: "new_project"
+  # get "/projects/:id", to: "projects#show", as: "project"
+  # get "/projects/:id/edit", to: "projects#edit", as: "edit_project"
+  # post "/projects", to: "projects#create"
+  # patch "/projects/:id", to: "projects#update"
+  # delete "/projects/:id", to: "projects#destroy"
+
 end
